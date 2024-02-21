@@ -1,0 +1,66 @@
+{
+  "name": "pr",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:8080",
+  "dependencies": {
+    "@aldabil/react-scheduler": "^2.7.9",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "@ijavad805/react-datepicker": "^2.0.4",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@webilix/jalali-date-time": "^1.2.2",
+    "animate.css": "^4.1.1",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.2.0",
+    "date-fns": "^2.30.0",
+    "emotion": "^11.0.0",
+    "jalaali-js": "^1.2.6",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.29.4",
+    "moment-jalaali": "^0.10.0",
+    "react": "^18.2.0",
+    "react-animated-css": "^1.2.1",
+    "react-big-scheduler": "^0.2.7",
+    "react-bootstrap": "^2.7.4",
+    "react-calendar": "^4.2.1",
+    "react-date-object": "^2.1.7",
+    "react-dom": "^18.2.0",
+    "react-multi-date-picker": "^4.0.0",
+    "react-paginate": "^8.2.0",
+    "react-push-notification": "^1.5.3",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "5.0.1",
+    "shamsi-date-converter": "^1.0.5",
+    "styled-components": "^5.3.9",
+    "web-vitals": "^2.1.4",
+    "wowjs": "^1.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
