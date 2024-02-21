@@ -1,0 +1,33 @@
+:root {
+  --darkblue: #2F5061;
+  --medblue: #7995B1; 
+  --lightblue: #1e457c66;
+  --lightpink :#F4EAE6;
+  --pink :#EDB5B5;
+  --darkppink:#E57F84;
+  overflow-x: hidden !important;
+}
+
+font-face {
+  font-family: 'B Nazanin';
+  src: url('./assets/font/BNazanin.woff2') format('woff2'),
+      url('./assets/font/BNazanin.woff') format('woff'),
+      url('./assets/font/BNazanin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} 
+
+body {
+  direction: rtl;
+  margin: 0;
+  font-family:'B Nazanin';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
