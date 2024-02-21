@@ -47,6 +47,6 @@ To get started with Medicare, follow these steps:
 1. Clone the repository :\
 `git clone https://github.com/KimiyaShahbakhti/MediCare-healthcare-scheduler.git`
 2. Set up the necessary dependencies.
-3. Navigate to the project directory:\
+3. Navigate to the project directory :\
 `cd Booth-ShiftAndAdd-Multiplication`
 4. Run the application.
