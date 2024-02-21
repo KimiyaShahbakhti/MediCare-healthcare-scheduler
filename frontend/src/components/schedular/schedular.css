@@ -1,0 +1,213 @@
+.schedualr img {
+  width: 30px;
+  background-color: white;
+}
+
+.schedualr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0 0 15px #d3d3d3;
+  height: 100%;
+}
+
+.schedularHeader {
+  display: flex;
+  width: 100%;
+  font-size: 24px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 5px double #f7b2ad;
+}
+.schedularHeader .schedularTitle {
+  background-color: #f7b2ad;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  padding: 10px;
+  color: #984868;
+}
+.schedularHeader i {
+  color: #f7b2ad;
+}
+.schedularHeader i:hover {
+  color: #b77d79;
+}
+
+.schedularWeek {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #faf3f0;
+  width: 100%;
+  padding: 7px 0;
+  color: #984868;
+}
+.schedularWeek span {
+  font-size: 21px;
+}
+
+.mainschedualr {
+  width: 100%;
+  text-align: center;
+}
+
+.daysRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.daysRow .eventmed,
+.daysRow .eventdr,
+.daysRow .eventmedical {
+  border-radius: 5px;
+  margin: 1px;
+  font-size: 14px;
+}
+.daysRow .eventmed {
+  background-color: #b7d7dd;
+  color: #4d7189;
+}
+.daysRow .eventdr {
+  background-color: #55ae95;
+  color: #fff;
+}
+.daysRow .eventmedical {
+  background-color: #c97fc7;
+  color: #fff;
+}
+
+.day {
+  border: 1px solid #faf3f0;
+  color: #984868;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100%;
+  height: 140px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.day::-webkit-scrollbar-track {
+  background-color: #faf3f0;
+  border-radius: 10px;
+}
+.day::-webkit-scrollbar {
+  width: 7px;
+}
+
+.day::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #f9d3cf;
+}
+.day::-webkit-scrollbar-thumb:hover {
+  background-color: #b77d79;
+}
+.today {
+  border-top: 10px solid #f7b2ad;
+}
+
+/* responsive */
+@media only screen and (max-width: 1200px) {
+  .schedualr {
+    height: 100%;
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .day {
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .schedularHeader .schedularTitle {
+    font-size: 20px;
+  }
+  .schedularWeek span {
+    font-size: 17px;
+  }
+  .day {
+    font-size: 14px;
+  }
+  .daysRow .eventmed,
+  .daysRow .eventdr,
+  .daysRow .eventmedical {
+    font-size: 14px;
+  }
+  .schedualr {
+    padding: 15px 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .schedularHeader .schedularTitle {
+    padding: 7px;
+    font-size: 17px;
+  }
+  .schedularWeek span {
+    font-size: 15px;
+  }
+  .daysRow .eventmed,
+  .daysRow .eventdr,
+  .daysRow .eventmedical {
+    font-size: 12px;
+    padding: 0;
+  }
+  .schedualr {
+    padding: 15px 0px;
+  }
+  .schedularHeader {
+    padding: 0 30px;
+  }
+  .day {
+    height: 75px;
+    font-size: 12px;
+  }
+  .calendar .today-plan .today-card .card-title {
+    font-size: 17px;
+  }
+  .calendar .today-plan .today-card .card-subtitle {
+    font-size: 14px;
+  }
+  .calendar .form-control,
+  .calendar .form-select {
+    font-size: 15px;
+  }
+  .today-plan-date {
+    width: 100%;
+  }
+  .day::-webkit-scrollbar {
+    width: 5px;
+  }
+  .today {
+    border-top: 7px solid #f7b2ad;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .schedularHeader .schedularTitle {
+    padding: 4px 7px;
+  }
+  .day {
+    font-size: 10px;
+    height: 50px;
+  }
+  .daysRow .eventmed,
+  .daysRow .eventdr,
+  .daysRow .eventmedical {
+    font-size: 10px;
+    margin: 1px 0;
+  }
+  .schedualr,
+  .calendar .today-plan,
+  .calendar .addrem {
+    border-radius: 10px;
+  }
+  .schedualr-side {
+    padding-bottom: 0;
+  }
+}

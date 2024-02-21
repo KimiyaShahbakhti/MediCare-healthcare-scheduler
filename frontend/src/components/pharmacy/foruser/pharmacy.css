@@ -1,0 +1,348 @@
+.pharmacy {
+  margin: 50px 90px;
+  box-shadow: 0px 0px 15px lightgray;
+  border: none;
+  border-radius: 45px;
+  padding: 40px 50px;
+  background: white;
+}
+.pharmacy-side,
+.medicine-side {
+  text-align: center;
+}
+.pharmacy .pharmacy-side {
+  background-color: white;
+  border-bottom: 1px solid #faf3f0;
+}
+
+.pharmacy-content {
+  background: url("./../../../assets/img/home.png");
+  background-size: contain;
+  background-repeat: space;
+  background-position: center;
+  max-height: 300px;
+  min-height: 300px;
+  overflow: auto;
+  text-align: right;
+}
+
+.pharmacy-content::-webkit-scrollbar-track {
+  background-color: #faf3f0;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+.pharmacy-content::-webkit-scrollbar {
+  width: 10px;
+}
+.pharmacy-content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #f9d3cf;
+}
+.pharmacy-content::-webkit-scrollbar-thumb:hover {
+  background-color: #b77d79;
+}
+
+.tooltip > div.tooltip-inner {
+  background-color: #f7b2ad;
+  color: #4d7189;
+  border: none;
+}
+.tooltip.show {
+  opacity: 0.9;
+}
+.tooltip > div.tooltip-inner .card-title {
+  font-size: 17px;
+  font-weight: bold;
+  border-bottom: 1px solid #d3d3d3;
+  color: #4d7189;
+}
+.tooltip > div.tooltip-inner .card-subtitle {
+  font-size: 13px;
+}
+.tooltip i {
+  margin: 5px;
+}
+.pharmacy .medicine-item {
+  display: inline-block;
+  padding: 5px;
+  width: 25%;
+  text-align: center;
+}
+.pharmacy .medicine {
+  background-color: #faf3f0c1;
+  border: 3px solid #f7b2ad !important;
+  border-radius: 25px;
+  font-weight: bold;
+  color: #984868;
+  padding: 10px 20px;
+  display: inline-block;
+  width: 100%;
+}
+.pharmacy .medicine:hover {
+  background-color: #f7b2ad92;
+}
+.pharmacy .medicine:focus {
+  background-color: #f7b2ad92;
+  border: none;
+  box-shadow: none !important;
+}
+.pharmacy .medicine hr {
+  margin: 2px;
+}
+
+.pharmacy .medicine .trashbtn,
+.pharmacy .medicine .editbtn {
+  background-color: transparent;
+  border: none !important;
+  padding: 0px;
+  display: inline-block;
+}
+.pharmacy .medicine .btn:focus {
+  border-color: none !important;
+  box-shadow: none !important;
+}
+.pharmacy .medicine .trash,
+.pharmacy .medicine .pen {
+  display: block;
+  margin: 2px;
+  font-size: 15px;
+  border: none;
+  float: left;
+}
+.pharmacy .trash {
+  color: #ff5858;
+  margin-right: 5px;
+}
+.pharmacy .pen {
+  color: #84e18a;
+}
+.pharmacy .medicine .more-for-med {
+  margin: 0px;
+  font-size: 15px;
+  font-weight: lighter;
+  display: inline-block;
+}
+.pharmacy .medicine-side .add-to-pharmacy {
+  color: #4d7189;
+  font-weight: bold;
+  font-size: 25px;
+  display: block;
+  text-align: right;
+}
+
+.pharmacy .medicine-side form {
+  margin: 40px;
+}
+.pharmacy .medicine-side .form-label,
+.modal-content .form-label {
+  color: #4d7189;
+  display: block;
+  text-align: right;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 19px;
+}
+.modal-content .form-label {
+  margin-top: 10px;
+}
+.modal-body {
+  padding-top: 0;
+}
+.pharmacy .medicine-side .form-check-label,
+.modal-content .form-check-label {
+  color: #4d7189;
+  display: block;
+  text-align: right;
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 19px;
+}
+.pharmacy .medicine-side .form-check-input:checked,
+.modal-content .form-check-input:checked {
+  background-color: #f7b2ad;
+  border-color: #f7b2ad;
+}
+.pharmacy .medicine-side .form-control,
+.pharmacy .medicine-side .form-select,
+.modal-content .form-select,
+.modal-content .form-control {
+  border: none;
+  border-bottom: 1px solid #d3d3d3;
+  border-radius: 0px;
+}
+.pharmacy .medicine-side .form-control:focus,
+.pharmacy.medicine-side .form-select:focus,
+.modal-content .form-control:focus,
+.modal-content .form-select:focus {
+  box-shadow: 0 0 5px #d3d3d3;
+}
+.pharmacy .medicine-side .btn-save,
+.modal-content .btn-save {
+  border-radius: 20px;
+  height: 40px;
+  background-color: #8aabb9;
+  border: none;
+  float: right;
+  width: 10%;
+  margin: 0;
+}
+.pharmacy .medicine-side .btn-save:hover,
+.modal-content .btn-save:hover {
+  background-color: #4d7189;
+}
+.pharmacy .medicine-side .other-box,
+.modal-content .other-box-modal {
+  display: none;
+}
+
+.listgroup-selects{
+  position: absolute;
+  opacity: 0.9;
+  height: 200px;
+  overflow: auto;
+}
+
+/* responsive */
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1024px) {
+  .pharmacy .medicine-side form {
+    margin: 20px 10px;
+  }
+  .pharmacy {
+    padding: 40px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .pharmacy {
+    margin: 40px;
+    margin-left: 50px;
+    padding: 30px 17px;
+  }
+  .pharmacy .medicine-side .btn-save,
+  .modal-content .btn-save {
+    width: 15%;
+  }
+  .fg-pha-res {
+    width: 50%;
+  }
+  .pharmacy .medicine-item {
+    width: 33.333333%;
+  }
+  .pharmacy .medicine {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .pharmacy {
+    margin: 30px;
+  }
+  .pharmacy .medicine-side .btn-save,
+  .modal-content .btn-save {
+    margin: auto;
+  }
+  .pharmacy .medicine-side form {
+    margin: 20px 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .fg-pha-res {
+    width: 100%;
+  }
+  .pharmacy .medicine-side .btn-save,
+  .modal-content .btn-save {
+    width: 50%;
+  }
+  .pharmacy .medicine-item {
+    width: 50%;
+  }
+  .pharmacy .medicine {
+    width: 95%;
+  }
+  .listgroup-selects{
+    left: 60px;
+    right: 60px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .pharmacy {
+    margin: 20px;
+    border-radius: 25px;
+    margin-bottom: 80px !important;
+  }
+  .pharmacy .medicine .more-for-med {
+    font-size: 14px;
+  }
+  .tooltip > div.tooltip-inner .card-title {
+    font-size: 15px;
+  }
+  .pharmacy .medicine-side .add-to-pharmacy {
+    font-size: 20px;
+    margin: 0px !important;
+  }
+  .pharmacy .medicine-side .form-label,
+  .pharmacy .medicine-side .form-check-label,
+  .modal-content .form-label,
+  .modal-content .form-check-label {
+    font-size: 17px;
+  }
+  .pharmacy .form-control,
+  .pharmacy .form-select,
+  .modal-content .form-control,
+  .modal-content .form-select {
+    font-size: 15px;
+  }
+  .pharmacy .medicine-side form {
+    margin: 15px 10px;
+  }
+  .pharmacy .medicine {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+  }
+
+  .pharmacy .medicine .trash {
+    color: #ff5858;
+    margin-right: 10px;
+  }
+  .pharmacy .medicine .pen {
+    color: #84e18a;
+    margin-right: 5px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .pharmacy .medicine {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  .pharmacy .medicine-item {
+    width: 100%;
+  }
+  .pharmacy {
+    border-radius: 10px;
+    padding: 15px;
+  }
+  .pharmacy .medicine-side .add-to-pharmacy {
+    font-size: 17px;
+  }
+  .pharmacy .medicine-side .form-label,
+  .pharmacy .medicine-side .form-check-label,
+  .modal-content .form-label,
+  .modal-content .form-check-label {
+    font-size: 15px;
+  }
+  .pharmacy .form-control,
+  .pharmacy .form-select,
+  .modal-content .form-select,
+  .modal-content .form-control {
+    font-size: 14px;
+  }
+  .pharmacy .medicine-side form {
+    margin: 15px 0;
+  }
+  .listgroup-selects{
+    left: 40px;
+    right: 40px;
+  }
+}

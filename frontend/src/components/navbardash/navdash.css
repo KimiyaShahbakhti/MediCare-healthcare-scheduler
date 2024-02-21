@@ -1,0 +1,194 @@
+.dashnav {
+  height: 70px;
+  padding: 10px;
+  border-bottom: 1px solid gainsboro;
+}
+.tabmenu-mobile-res {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background: #ffb4ac;
+  z-index: +100;
+  display: none;
+  height: 50px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  box-shadow: 0 0 15px #897473;
+  padding: 0 20px;
+}
+.tabmenu-mobile-res a {
+  color: #fff;
+  padding: 0px;
+}
+.tabmenu-mobile-res a:hover {
+  transition: 0.2s;
+  transform: scale(1.02);
+}
+.tabmenu-mobile-res a i {
+  vertical-align: middle;
+  font-size: 20px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.tabmenu-mobile-btn-res.active {
+  border-radius: 0px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  height: 80px;
+  background: #b77d79;
+  transform: scale(1.5);
+  color: #fff;
+  box-shadow: 0 0 13px #b77d79;
+  width: 40px !important;
+  margin: auto;
+}
+.tabmenu-mobile-btn-res:hover {
+  border-radius: 0px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  height: 80px;
+  background: #b77d79;
+  transform: scale(1.5) !important;
+  color: #fff;
+  box-shadow: 0 0 13px #b77d79;
+  width: 40px !important;
+  margin: auto;
+  transition: 0.5s !important;
+}
+
+.humbtn {
+  margin: 0px 20px !important;
+  background: transparent;
+  border: none;
+  color: #4d718998 !important;
+  font-size: 24px !important;
+}
+.logout {
+  margin: auto !important;
+  background: transparent;
+  border: none;
+  color: #4d718998 !important;
+  font-size: 24px !important;
+}
+.humbtn i,
+.logout i {
+  vertical-align: middle;
+}
+.humbtn:hover,
+.logout:hover {
+  background: transparent;
+  color: #4d7189;
+}
+.humbtn:focus {
+  box-shadow: none !important;
+  background: transparent;
+}
+.logout-res {
+  display: none;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 90%;
+}
+.logout-res i {
+  color: #ff5858 !important;
+}
+.dashbrand {
+  color: #4d7189;
+  font-size: 24px;
+  font-weight: 600;
+}
+.dashbrand:hover {
+  color: #4d7189;
+}
+.offcanvas .btn-close:focus {
+  box-shadow: none !important;
+  color: #4d7189;
+}
+.dashprofile {
+  display: flex;
+  width: 200px;
+}
+.top-dash-intro {
+  position: absolute;
+  left: 0;
+}
+.imgprofile {
+  width: 50px;
+  height: 50px;
+}
+.imgprofile img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px lightgray;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nameprofile {
+  color: #4d7189;
+  margin-right: 5px;
+}
+.nameprofile p {
+  margin-top: 10px;
+}
+.offcanvas {
+  width: 300px !important;
+}
+.offcanvas-title {
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #4d7189;
+}
+.offcanvas-side .nav-link {
+  margin-bottom: 20px;
+  color: #4d718998;
+  font-size: 20px;
+}
+.offcanvas-side i {
+  vertical-align: middle;
+  font-size: 24px;
+  color: #4d718998;
+}
+.offcanvas-side .nav-link:hover {
+  color: #4d7189;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+.offcanvas-side .nav-link:hover i,
+.offcanvas-side .nav-link:hover span {
+  color: #4d7189;
+}
+.span-offcanvas {
+  margin: 20px;
+  color: #4d718998;
+}
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+  .humbtn {
+    margin: 0px !important;
+  }
+  .dashbrand {
+    padding-right: 5px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .dashnav {
+    height: 50px;
+    padding: 0px;
+  }
+  .logout-res {
+    display: block;
+  }
+  .tabmenu-mobile-res {
+    display: flex;
+  }
+  .top-dash-intro {
+    display: none;
+  }
+}

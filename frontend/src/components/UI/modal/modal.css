@@ -1,0 +1,53 @@
+.modal-content {
+  border-radius: 25px;
+  border: none;
+}
+.modal-content .modal-header {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  padding: 15px 25px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #F7B2AD;
+}
+.modal-header .btn-close {
+  display: none;
+}
+.modal-content .closebtn {
+  background: transparent;
+  border-radius: 20px;
+  padding: 0;
+  border: none !important;
+  margin: 0;
+}
+.modal-content .closebtn i {
+  font-size: 24px;
+}
+.modal-backdrop {
+  background: #0000004d;
+}
+.modal-footer {
+  border: none;
+}
+.modal-footer button:hover {
+  background-color: #1e457cb4;
+}
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+}
+@media only screen and (max-width: 480px) {
+  .modal-content .modal-header {
+    padding: 10px 25px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .modal-content {
+    border-radius: 10px;
+  }
+  .modal-content .modal-header {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+}

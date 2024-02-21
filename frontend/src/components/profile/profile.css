@@ -1,0 +1,238 @@
+.profile {
+  margin: 50px 90px;
+  box-shadow: 0px 0px 15px lightgray;
+  border: none;
+  border-radius: 45px;
+  padding: 40px 50px;
+  background: white;
+}
+.profile .top-profile {
+  height: 150px;
+  border-top-right-radius: 45px;
+  border-top-left-radius: 45px;
+  background-color: #f7b2ad;
+}
+.profile .editalert{
+  width: 50%;
+  font-size: 14px;
+  padding: 5px;
+  color: #fff;
+}
+.form-floating label{
+  left: 0px; 
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    direction: ltr;
+}
+.form-floating label i{
+    color: rgba(211, 211, 211, 0.5);
+}
+.profile .image-profile .image-card-profile {
+  background: transparent;
+  border: none;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-top: -100px;
+}
+.profile .image-profile .image-card-profile img {
+  border-radius: 50%;
+  background-color: whitesmoke;
+  border: 5px solid white;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile .image-profile .image-card-profile .card-body {
+  padding: 0;
+  text-align: center;
+}
+.profile .btn-file {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f9d3cf;
+  border: none;
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+  padding: 0;
+}
+.profile .btn-file:hover {
+  background-color: #b77d79;
+}
+.btn-file .fa-plus {
+  vertical-align: middle;
+}
+.profile .form-profile .form-item label {
+  color: #4d7189;
+  font-size: 19px;
+  font-weight: bold;
+}
+.profile .form-profile .form-item input {
+  border: none;
+  border-bottom: 1px solid lightgray;
+  background-color: transparent;
+  border-radius: 0%;
+  color: #4d7189;
+}
+.profile .form-profile .form-item input:focus,
+.profile .form-profile .form-item select:focus {
+  box-shadow: 0px 0px 10px lightgray;
+  border: none;
+}
+
+.profile .form-profile .change-password {
+  color: #4d7189;
+  font-size: 25px;
+  font-weight: bold;
+}
+.profile .form-profile .form-item input[type="checkbox"] {
+  background-color: #8aabb9;
+  float: right;
+  margin-left: 15px;
+}
+.profile .form-profile .form-item input[type="date"] {
+  border: none;
+}
+.profile .form-profile .pasinput {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.profile .btn-save {
+  border-radius: 20px;
+  height: 40px;
+  background-color: #8aabb9;
+  border: none;
+  float: right;
+  width: 10%;
+  margin: 0;
+}
+.profile .btn-save:hover {
+  background-color: #4d7189;
+}
+.profile .btn-save:focus {
+  box-shadow: none;
+}
+.profile .form-profile .form-check label {
+  font-size: 15px;
+  color: #4d7189;
+}
+
+/* responsive */
+@media only screen and (max-width: 900px) {
+  .profile {
+    margin: 40px;
+    margin-left: 50px;
+    padding: 28px;
+  }
+  .profile .top-profile {
+    height: 120px;
+  }
+  .profile .image-profile .image-card-profile {
+    width: 170px;
+    height: 170px;
+  }
+  .profile .btn-file {
+    margin-right: 115px;
+  }
+  .form-in {
+    margin: 0 !important;
+  }
+  .profile .btn-save {
+    width: 15%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .profile {
+    padding: 25px;
+    margin: 30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .profile .btn-save {
+    width: 50%;
+    margin: auto;
+  }
+  .form-input-res {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .form-input-res .form-item {
+    margin-top: 0px !important;
+  }
+  .profile .image-profile .image-card-profile {
+    width: 150px;
+    height: 150px;
+    margin-top: -80px;
+  }
+  .change-res {
+    margin-top: 0px !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .profile {
+    margin: 20px;
+    border-radius: 25px;
+    margin-bottom: 80px !important;
+  }
+  .profile .top-profile {
+    height: 100px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+  }
+  .profile .image-profile .image-card-profile {
+    margin-left: 30px;
+  }
+  .profile .btn-file {
+    margin-right: 105px;
+    margin-top: -45px;
+  }
+  .profile .form-profile .form-item label {
+    font-size: 16px;
+  }
+  .profile .form-profile .form-item input,
+  .profile .form-profile .form-item .form-select {
+    font-size: 15px;
+  }
+  .profile .form-profile .change-password {
+    font-size: 20px;
+  }
+  .profile .form-in {
+    margin-top: -25px !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .profile {
+    margin: 20px;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  .profile .top-profile {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .profile .top-profile {
+    height: 80px;
+  }
+  .profile .image-profile .image-card-profile {
+    width: 120px;
+    height: 120px;
+    margin-top: -65px;
+    margin-left: 15px;
+  }
+  .profile .btn-file {
+    left: 10px;
+    bottom: 10px;
+}
+
+  .profile .form-profile .form-item label {
+    font-size: 15px;
+  }
+  .profile .form-profile .form-item input,
+  .profile .form-profile .form-item .form-select {
+    font-size: 14px;
+  }
+}

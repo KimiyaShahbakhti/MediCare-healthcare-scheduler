@@ -1,0 +1,72 @@
+.topdashicon {
+  margin: 2rem 5rem 0px 0px;
+}
+.topdashicon i {
+  background: linear-gradient(
+    to top,
+    #4D7189,
+    #779FAD,
+    #779FAD
+  );
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  border-radius: 30%;
+  color: white;
+  flex-wrap: wrap;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+}
+.topdashicon span {
+  margin: 15px;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #4D7189;
+}
+.topdashicon i:before {
+  margin: auto;
+}
+
+/* responsive */
+@media only screen and (max-width: 1024px) {
+  .topdashicon {
+    margin: 2rem 4rem 0px 0px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .topdashicon {
+    margin: 1rem 3rem 0px 0px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .topdashicon span {
+    font-size: 27px;
+  }
+  .topdashicon i {
+    height: 43px;
+    width: 43px;
+  }
+  .pharmacy .med-table th {
+    font-size: 15px;
+  }
+  .pharmacy .med-table td {
+    font-size: 14px;
+  }
+  .topdashicon {
+    margin: 1rem 2rem 0px 0px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .topdashicon span {
+    font-size: 20px;
+  }
+  .topdashicon i {
+    font-size: 15px;
+    height: 35px;
+    width: 35px;
+  }
+  .pharmacy .med-table th {
+    font-size: 15px;
+  }
+}

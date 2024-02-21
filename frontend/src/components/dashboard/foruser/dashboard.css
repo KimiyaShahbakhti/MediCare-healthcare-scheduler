@@ -1,0 +1,300 @@
+.problem .problem-box,
+.problem .addbox {
+  box-shadow: 0px 0px 15px lightgray;
+  margin: 32px;
+  border-radius: 45px;
+  border: none;
+  padding: 15px;
+}
+.problem {
+  padding: 20px;
+  padding-left: 30px !important;
+}
+.problem .card {
+  height: auto;
+}
+.problem .problem-box .card-title {
+  font-size: 24px;
+  font-weight: bolder;
+  color: #4d7189;
+}
+.problem .problem-box .card-text {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px lightgrey;
+  background-color: whitesmoke;
+}
+.problem .problem-box .notelist {
+  background-color: #faf3f0;
+}
+
+.problem .problem-box .card-text .list-group {
+  overflow: auto;
+  max-height: 150px;
+}
+.problem .problem-box .card-text .list-group::-webkit-scrollbar-track,
+.my-notes::-webkit-scrollbar-track,
+.medicines-check::-webkit-scrollbar-track {
+  background-color: #fcfcfc;
+  border-radius: 10px;
+}
+.problem .problem-box .card-text .list-group::-webkit-scrollbar,
+.my-notes::-webkit-scrollbar,
+.medicines-check::-webkit-scrollbar {
+  width: 7px;
+}
+.problem .problem-box .card-text .list-group::-webkit-scrollbar-thumb,
+.my-notes::-webkit-scrollbar-thumb,
+.medicines-check::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #d3d3d3;
+}
+.problem .problem-box .card-text .list-group::-webkit-scrollbar-thumb:hover,
+.my-notes::-webkit-scrollbar-thumb:hover,
+.medicines-check::-webkit-scrollbar-thumb:hover {
+  background-color: #808080;
+}
+.problem .problem-box .card-text .list-group-item {
+  color: #4d7189;
+  background-color: transparent;
+}
+.problem .problem-box .title-subbox {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #779FAD;
+}
+.problem .problem-box .title-notesub {
+  background-color: #f7b2ad;
+}
+
+.problem .problem-box .card-body .col-6 {
+  padding: 10px;
+  text-align: center;
+  /* height: 235px; */
+}
+.problem .problem-box .trashbtn,
+.problem .problem-box .editbtn {
+  background-color: transparent;
+  border: none;
+  float: left;
+  padding: 0px;
+}
+.problem .problem-box .trashbtn:focus,
+.problem .problem-box .editbtn:focus {
+  border-color: none !important;
+  box-shadow: none !important;
+}
+.problem .problem-box .trash,
+.problem .problem-box .pen {
+  display: block;
+  margin: 0px;
+  font-size: 24px;
+}
+
+.problem .pen {
+  color: #84e18a;
+  margin-left: 10px !important;
+}
+.problem .trash {
+  color: #ff5858;
+}
+
+.problem .addbox {
+  vertical-align: top;
+  height: 100%;
+}
+.modal-content .form-check-dash:nth-child(even) {
+  background-color: #faf3f0;
+}
+.medicines-check {
+  overflow: auto;
+  max-height: 100px;
+}
+.modal-content .other-box {
+  display: none;
+}
+.problem .my-notes,
+.modal-content .my-notes {
+  padding: 5px;
+  overflow: auto;
+  max-height: 85px;
+  margin: 0;
+}
+
+.problem .addbox .addbox-plus {
+  text-align: center;
+  border: none;
+  font-size: 150px;
+  height: 100%;
+  font-weight: 100;
+  width: 90%;
+  margin: auto;
+  background: #f7b2ad92;
+  border-radius: 25px;
+  color: white;
+  -webkit-transition: 0.5s;
+}
+.problem .addbox .addbox-plus i {
+  display: flex;
+  justify-content: center;
+}
+.problem .addbox .addbox-plus:hover {
+  transition: 0.5s;
+  background: #f7b2ad;
+}
+
+.problem .addbox .addbox-plus:focus {
+  box-shadow: none;
+}
+
+.problem .problem-box,
+.problem .addbox {
+  margin: 0px;
+}
+/* modal */
+.modal-content .trashbtnmodal {
+  background-color: transparent;
+  float: left;
+  padding: 0px;
+}
+
+.modal-content .trashbtnmodal .trash {
+  color: #ff8888;
+  font-size: 20px;
+}
+.modal-content .trashbtnmodal:hover {
+  background: transparent;
+}
+.modal-content .trashbtnmodal:focus {
+  box-shadow: none;
+}
+.modal-content .trashbtnmodal:hover .trash {
+  color: #ff5858;
+}
+.modal-content .list-group-item{
+  color: #4d7189;
+}
+
+/* responsive */
+@media only screen and (max-width: 1200px) {
+  .problem .problem-box .card-body .col-6 {
+    padding: 5px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .problem .problem-box,
+  .problem .addbox {
+    margin: 0;
+  }
+  .problem .box-res {
+    padding: 0 5px;
+  }
+  .problem .addbox {
+    padding: 15px 0;
+  }
+  
+}
+@media only screen and (max-width: 900px) {
+  .problem .box-res {
+    width: 100%;
+    margin: 15px 0;
+    padding: 0 25px;
+  }
+  .problem {
+    padding: 0 25px;
+    padding-left: 35px !important;
+  }
+  .problem {
+    margin: 20px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .problem .box-res {
+    padding: 0;
+  }
+  .problem {
+    margin: 30px 0;
+    padding: 0 40px !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .problem .problem-box,
+  .problem .problem-box,
+  .problem .addbox{
+    border-radius: 25px;
+  }
+  
+  .problem {
+    margin: 5px 0;
+    padding: 0 32px !important;
+    margin-bottom: 65px;
+  }
+  
+  .problem .problem-box .card-title {
+    font-size: 20px;
+  }
+  .problem .problem-box .title-subbox {
+    font-size: 17px;
+  }
+  .problem .problem-box .card-text .list-group {
+    font-size: 15px;
+  }
+  .problem .addbox .addbox-plus
+   {
+    font-size: 115px;
+  }
+  .problem .addbox {
+    height: 200px;
+  }
+  .problem .card {
+    height: auto;
+  }
+  .problem .note-boxin-res,
+  .problem .med-boxin-res {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .problem .problem-box .card-text .list-group {
+    max-height: 120px;
+  }
+  .problem .problem-box .trash,
+  .problem .problem-box .pen {
+    font-size: 20px;
+  }
+  
+}
+@media only screen and (max-width: 320px) {
+  .problem .problem-box .card-title
+  {
+    font-size: 17px;
+  }
+  
+  .problem .card-subtitle {
+    font-size: 14px;
+  }
+  .problem .problem-box .title-subbox {
+    font-size: 15px;
+  }
+  .problem .problem-box .card-text .list-group-item {
+    font-size: 14px;
+  }
+  .problem .problem-box,
+  .problem .problem-box,
+  .problem .addbox,
+  .problem .addbox .addbox-plus,
+  .problem .problem-box .card-text {
+    border-radius: 10px;
+  }
+
+  .problem .problem-box .title-subbox {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+}

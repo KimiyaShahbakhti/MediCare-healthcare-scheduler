@@ -1,0 +1,235 @@
+.note {
+  margin: 50px 90px;
+  box-shadow: 0px 0px 15px lightgray;
+  border: none;
+  border-radius: 45px;
+  padding: 40px 50px;
+  background: white;
+}
+.note .show-note {
+  padding: 15px 40px;
+}
+.table-responsive {
+  overflow: auto;
+}
+.table-responsive::-webkit-scrollbar-track {
+  background-color: #faf3f0;
+  border-radius: 10px;
+}
+.table-responsive::-webkit-scrollbar {
+  height: 10px;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #f9d3cf;
+}
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  background-color: #b77d79;
+}
+.note .note-table {
+  border-radius: 25px;
+  text-align: center;
+  color: #4d7189;
+  table-layout: fixed;
+}
+.note .note-table th {
+  background-color: #f7b2ad;
+  font-size: 18px;
+  color: #fff;
+}
+.note .note-table th:first-child {
+  width: 70px;
+}
+.note .note-table th:nth-child(2) {
+  width: 150px;
+}
+.note .note-table th:nth-child(3) {
+  width: 650px;
+}
+.note .note-table th:nth-child(4) {
+  width: 80px;
+}
+.note .note-table th:nth-child(5) {
+  width: 80px;
+}
+
+.note .note-table tr:hover {
+  background-color: #fef1fc;
+  transition: 0.2s;
+}
+.note .note-table form {
+  margin: 0;
+}
+.note .note-table .btn-delete {
+  background-color: #ff8888;
+  border: none;
+}
+.note .note-table .btn-delete:hover {
+  background-color: #ff5858;
+  border: none;
+}
+.note .note-table .btn-edit {
+  background-color: #abfbb0;
+  border: none;
+}
+.note .note-table .btn-edit:hover {
+  color: white;
+  background-color: #84e18a;
+  border: none;
+}
+
+.note .add-to-notes {
+  color: #4d7189;
+  font-weight: bold;
+  font-size: 25px;
+  display: block;
+  text-align: right;
+}
+
+.note form {
+  margin: 40px;
+}
+.note .form-label,
+.modal-content .form-label {
+  display: block;
+  text-align: right;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 19px;
+  color: #4d7189;
+}
+.note .form-control,
+.note .form-select,
+.modal-content .form-select,
+.modal-content .form-control {
+  border: none;
+  border-bottom: 1px solid #d3d3d3;
+  border-radius: 0px;
+}
+.note .form-control:focus,
+.note .form-select:focus,
+.modal-content .form-select:focus,
+.modal-content .form-control:focus {
+  box-shadow: 0 0 5px #d3d3d3;
+}
+.note .btn-save,
+.modal-content .btn-save {
+  border-radius: 20px;
+  height: 40px;
+  background-color: #8aabb9;
+  border: none;
+  float: right;
+  width: 10%;
+  margin: 0;
+}
+.note .btn-save:hover,
+.modal-content .btn-save:hover {
+  background-color: #4d7189;
+}
+
+/* responsive */
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1024px) {
+  .note .show-note {
+    padding: 15px 0px;
+  }
+  .note .note-side form {
+    margin: 20px 0px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .note {
+    margin: 40px;
+    margin-left: 50px;
+    padding: 28px;
+  }
+  .note .note-side form .btn-save,
+  .modal-content .btn-save {
+    width: 50%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .note {
+    padding: 25px;
+    margin: 30px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .note {
+    margin: 20px;
+    border-radius: 25px;
+    margin-bottom: 80px !important;
+  }
+  .note .note-side .add-to-notes {
+    font-size: 20px;
+    margin: 0px !important;
+  }
+  .note .note-side .form-label,
+  .modal-content .form-label {
+    font-size: 17px;
+  }
+  .note .form-control,
+  .note .form-select,
+  .modal-content .form-control,
+  .modal-content .form-select {
+    font-size: 15px;
+  }
+  .note .note-table {
+    margin-bottom: 3px;
+  }
+  .note .show-note {
+    padding: 5px 0px;
+  }
+  .note .note-side form {
+    margin: 15px 0px;
+  }
+  .note .note-table th {
+    font-size: 15px;
+  }
+  .note .note-table td {
+    font-size: 14px;
+  }
+  .note .note-table th:first-child {
+    width: 50px;
+  }
+  .note .note-table th:nth-child(2) {
+    width: 80px;
+  }
+  .note .note-table th:nth-child(3) {
+    width: 400px;
+  }
+  .note .note-table th:nth-child(4) {
+    width: 60px;
+  }
+  .note .note-table th:nth-child(5) {
+    width: 60px;
+  }
+  .note .note-table button {
+    padding: 0 5px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .note {
+    margin: 20px;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  .note .note-table th {
+    font-size: 15px;
+  }
+  .note .note-side .add-to-notes {
+    font-size: 17px;
+  }
+  .note .note-side .form-label,
+  .modal-content .form-label {
+    font-size: 15px;
+  }
+  .note .form-control,
+  .note .form-select,
+  .modal-content .form-control,
+  .modal-content .form-select {
+    font-size: 14px;
+  }
+}
