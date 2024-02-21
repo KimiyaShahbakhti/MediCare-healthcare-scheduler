@@ -1,8 +1,8 @@
 # MediCare Healthcare Scheduler <img align="right" width="50" height="50" alt="Medicare Logo" src="frontend/src/assets/img/logogif.gif">
 This project, "Medicare Healthcare Management System", is my final project for my bachelor's degree in Computer Engineering.
-**Medicare** is a versatile healthcare management system that offers scheduling capabilities, medication/service reminders, and personalized healthcare services. It caters to the needs of both administrators and regular users, providing a seamless experience for managing medical tasks and improving healthcare outcomes.
+**Medicare** is a versatile healthcare management system that offers scheduling capabilities, medication/service reminders, and personalized healthcare services. It caters to the needs of both administrators and regular users, providing a seamless experience for managing medical tasks and improving healthcare outcomes.\
+this system utilizes Node.js for the backend, MongoDB for the database, and React.js with React Bootstrap framework for the frontend. It also incorporates Express.js for handling server requests, JWT for user authentication, and other modern technologies to provide a healthcare management experience.
 
- 
 ## Features
 
 ### Administrator Use Cases
