@@ -1,4 +1,4 @@
-# <img width="50" height="50" alt="Medicare Logo" src="frontend/src/assets/img/logogif.gif"> MediCare Healthcare Scheduler
+# MediCare Healthcare Scheduler <img align="right" width="50" height="50" alt="Medicare Logo" src="frontend/src/assets/img/logogif.gif"> 
 This project, "Medicare Healthcare Management System", is my final project for my bachelor's degree in Computer Engineering.
 **Medicare** is a versatile healthcare management system that offers scheduling capabilities, medication/service reminders, and personalized healthcare services. It caters to the needs of both administrators and regular users, providing a seamless experience for managing medical tasks and improving healthcare outcomes.
 
