@@ -1,0 +1,24 @@
+.navweb .navbar {
+  padding-top: 30px;
+}
+.navweb .navbar-brand {
+  font-size: 35px;
+  color: #4d7189;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+    .navweb .navbar {
+        padding-top:20px;
+    }
+    .navweb .navbar{
+        justify-content: start !important;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .navweb .navbar-brand {
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,67 @@
+.web-hero-container {
+  height: 650px;
+  width: 100%;
+  margin-top: -105px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  z-index: -1;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(/src/assets/img/animatedsvg.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.web-hero-container .hero-download {
+  background: white;
+  padding: 40px 25px;
+}
+.web-hero-container .download-btn-box {
+  text-align: center;
+}
+.web-hero-container .introapp p {
+  font-size: 20px;
+  color: #4d7189;
+}
+.web-hero-container .introapp {
+  text-align: center;
+}
+.web-hero-container .heroimg img {
+  height: 300px;
+  width: 300px;
+}
+
+/* responsive */
+@media only screen and (max-width: 768px) {
+  .web-hero-container .hero-download {
+    padding: 30px 20px;
+    width: 100%;
+    border-radius: 0px;
+  }
+  .web-hero-container .web-hero-container {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .web-hero-container .heroimg {
+    display: none;
+  }
+  .web-hero-container .introapp {
+    width: 100%;
+  }
+  .web-hero-container .hero-download {
+    box-shadow: 0 0 15px lightgray;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .web-hero-container .introapp p {
+    font-size: 17px;
+  }
+}

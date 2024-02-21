@@ -1,0 +1,99 @@
+.faq_area .fandq {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #4d7189;
+}
+.faq_area .fandq::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 1px;
+  background: white;
+  bottom: 1px;
+  left: calc(50% - 80px);
+}
+.faq_area .fandq::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #4d7189;
+  bottom: 0;
+  left: calc(50% - 30px);
+}
+
+.faq_area {
+  padding: 60px;
+  color: #4d7189;
+}
+.faq_area .accordion {
+  margin: auto;
+  width: 80%;
+}
+.faq_area .accordion-button::after {
+  margin-right: auto !important;
+  margin-left: unset;
+}
+.faq_area .accordion-button {
+  color: #4d7189;
+  font-size: 22px;
+}
+.faq_area .accordion-body {
+  font-size: 20px;
+  color: #2f4859;
+}
+.faq_area .accordion-button:not(.collapsed) {
+  background-color: #4d71890e;
+  box-shadow: none;
+  box-shadow: 0 0 5px whitesmoke;
+}
+.accordion-button:focus {
+  box-shadow: 0 0 5px whitesmoke;
+}
+
+/* responsive */
+@media only screen and (max-width: 900px) {
+  .faq_area .accordion {
+    margin: auto;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .faq_area {
+    padding: 50px 30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .accordion-button {
+    padding: 10px;
+  }
+  .faq_area {
+    padding: 30px 15px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .faq_area .container {
+    margin: 0;
+    padding: 0;
+  }
+  .faq_area {
+    padding: 25px 10px;
+  }
+  .faq_area .fandq {
+    font-size: 20px;
+  }
+  .faq_area .accordion-button {
+    color: #4d7189;
+    font-size: 17px;
+  }
+  .faq_area .accordion-body {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,81 @@
+.web-intro .topline {
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 69, 124, 0.2),
+    rgba(30, 69, 124, 0.2),
+    white
+  );
+  padding: 50px;
+}
+.web-intro .introtitle {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #4d7189;
+
+}
+.web-intro .introtitle::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 1px;
+  background: white;
+  bottom: 1px;
+  left: calc(50% - 80px);
+}
+.web-intro .introtitle::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #4d7189;
+  bottom: 0;
+  left: calc(50% - 30px);
+}
+.web-intro .carousel {
+  width: 100%;
+}
+.web-intro .img-intro {
+  margin: auto;
+  display: block;
+  width: 80%;
+}
+.web-intro .carousel-caption {
+  color: #4d7189;
+}
+
+
+/* responsive */
+@media only screen and (max-width: 768px) {
+  .web-intro .topline {
+    padding: 30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .web-intro .topline {
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .web-intro .introtitle {
+    font-size: 20px;
+  }
+  .web-intro .topline {
+    padding: 10px;
+  }
+  .web-intro .container {
+    padding: 0;
+  }
+  .web-intro .carousel-caption {
+    right: 0;
+    left: 0;
+  }
+}
+
